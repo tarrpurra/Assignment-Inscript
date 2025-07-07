@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import ArrowSplit from "../assets/Arrowsplit.png";
-import Share from "../assets/share.png";
+import Share from "../assets/Share.png";
 import upload from "../assets/Arrowupload.png";
 import Download from "../assets/Download.png";
 import toolbarIcon from "../assets/toolbar.png";
