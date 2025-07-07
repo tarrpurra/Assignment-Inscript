@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+#assigned: {
+  background-color: #e8f0e9;
+  height: 32px;
+  width: 124px;
+}
+#dueDate {
+  height: 32px;
+  width: 125px;
+}
+#priority {
+  height: 32px;
+  width: 125px;
+}
+#estValue {
+  height: 32px;
+  width: 125px;
+  color: #8c6c62;
+}
+
+#new {
+  height: 32px;
+  width: 125px;
+  background-color: white;
+  border-left: 2px dashed gray;
+  border-right: 2px dashed gray;
+
+}
+
+.header-assigned {
+  background-color: #e8f0e9; /* Tailwind pink-200 */
+  color: #be185d; /* Tailwind pink-800 */
+}
+.header-priority {
+  background-color: #eae3fc; /* Tailwind pink-100 */
+  color: #be185d; /* Tailwind pink-800 */
+}
+.header-due-date {
+  background-color: #eae3fc; /* Tailwind pink-100 */
+  color: #be185d; /* Tailwind pink-800 */
+}
+.header-est-value {
+  background-color: #ffe9e0; /* Tailwind red-200 */
+  color: #8c6c62; /* Tailwind red-800 */
+}
+
+#jobRequest {
+  height: 32px;
+  width: 256px;
+}
+#submitted {
+  height: 32px;
+  width: 124px;
+}
+#status {
+  height: 32px;
+  width: 124px;
+}
+#submitter {
+  height: 32px;
+  width: 150px;
+}
+#url {
+  height: 32px;
+  width: 150px;
+}
+td:nth-child(11) {
+  border-left: 2px dashed gray;
+  border-right: 2px dashed gray;
+}
