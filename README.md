@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# React Table Interface Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+This project aimed to replicate an Excel/Google Sheets-like table interface with dynamic functionalities using modern front-end technologies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features Implemented
 
-## Expanding the ESLint configuration
+### Framework & Setup
+- Initialized the project using **Vite** for faster development and hot module reloading.
+- Integrated **Tailwind CSS** via `tailwindcss` and `@tailwindcss/vite` for utility-first styling.
+- Installed and configured **@tanstack/react-table** to handle dynamic data grids.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Code Organization
+- Created modular and reusable components:
+  - `Table_structure.tsx`: Manages the core table layout and interaction logic.
+  - `column.tsx` and `columnConfig.tsx`: Define custom column types and configurations.
+- Separated the **Ribbon** into two parts:
+  - **Upper Ribbon**: Includes navigation and file options with a file-specific action bubble.
+  - **Tool Ribbon**: Hosts table tools including sort functionality and action buttons.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### UI/UX Enhancements
+- **Pixel-perfect UI**: Emphasis on matching design precision.
+- **User Bubble**: Shows settings and logout options.
+- Added interaction logs for every UI button (ensuring no "dead" UI elements).
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+##  Challenges Faced
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Sorting Issue**  
+   - Current sorting is based on row index rather than column values.This limited accurate sorting by content.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Complex Documentation**  
+   - React Table (TanStack) has a vast and detailed documentation set which required more time to understand and planning before implementation.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Keyboard Navigation**  
+   - Implementing arrow key navigation between cells proved complex and is still a pending enhancement.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Learning Outcomes
+- Learned to plan and debug UI behaviors with precision, especially with keyboard and sorting interactions.
+
+## Suggestions for Improvement
+ Fix the sorting function .
+-
+- Add arrow key navigation by tracking focused cells.
+
