@@ -10,16 +10,15 @@ import React from "react";
 import type { SortingState } from "@tanstack/react-table";
 import columnConfig from "./columnConfig";
 import { columnOrder } from "./column";
+import linkIcon from "../assets/Link.png";
+import reloadIcon from "../assets/Sync.png";
+import plusIcon from "../assets/Add.png";
+import SplitIcon from "../assets/Arrowsplitgreen.png";
+import split from "../assets/Arrowsplit.png";
+import more from "../assets/more.png";
 
 type TableData = { [key: string]: string };
 type TableStyle = { [key: string]: string };
-
-const linkIcon = "./src/assets/Link.png";
-const reloadIcon = "./src/assets/Sync.png";
-const plusIcon = "./src/assets/Add.png";
-const SplitIcon = "./src/assets/Arrowsplitgreen.png";
-const split = "./src/assets/Arrowsplit.png";
-const more = "./src/assets/more.png";
 
 const Rows = 100;
 

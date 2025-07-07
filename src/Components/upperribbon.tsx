@@ -1,10 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
-const panel = "./src/assets/Panel.png";
-const more = "./src/assets/More.png";
-const search = "./src/assets/search.png";
-const Notification = "./src/assets/Notification.png";
-const Profile = "./src/assets/Profile.png";
+import panel from "../assets/Panel.png";
+import more from "../assets/More.png";
+import search from "../assets/search.png";
+import Notification from "../assets/Notification.png";
+import Profile from "../assets/Profile.png";
 
 export default function UpperRibbon() {
   const [showProfilePopup, setShowProfilePopup] = useState(false);

@@ -1,14 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 
-const ArrowSplit = "./src/assets/Arrowsplit.png";
-const Share = "./src/assets/share.png";
-const upload = "./src/assets/Arrowupload.png";
-const Download = "./src/assets/Download.png";
-const toolbarIcon = "./src/assets/toolbar.png";
-const hideIcon = "./src/assets/hide.png";
-const sortIcon = "./src/assets/sort.png";
-const filterIcon = "./src/assets/filter.png";
-const cellIcon = "./src/assets/cell.png";
+import ArrowSplit from "../assets/Arrowsplit.png";
+import Share from "../assets/share.png";
+import upload from "../assets/Arrowupload.png";
+import Download from "../assets/Download.png";
+import toolbarIcon from "../assets/toolbar.png";
+import hideIcon from "../assets/hide.png";
+import sortIcon from "../assets/sort.png";
+import filterIcon from "../assets/filter.png";
+import cellIcon from "../assets/cell.png";
 
 interface SortColumn {
   id: string;

@@ -1,9 +1,9 @@
-const Briefcase = "./src/assets/Briefcase.png";
-const dropdown = "./src/assets/dropdown.png";
-const calendar = "./src/assets/calendar.png";
-const url = "./src/assets/url.png";
-const user = "./src/assets/user.png";
-const hand = "./src/assets/hand.png";
+import Briefcase from "../assets/Briefcase.png";
+import dropdown from "../assets/dropdown.png";
+import calendar from "../assets/calendar.png";
+import url from "../assets/url.png";
+import user from "../assets/user.png";
+import hand from "../assets/hand.png";
 
 const columnConfig = [
   { id: "jobRequest", label: "Job Request", icon: Briefcase },
@@ -20,6 +20,6 @@ const columnConfig = [
   { id: "priority", label: "Priority", icon: "" },
   { id: "dueDate", label: "Due Date", icon: "" },
   { id: "estValue", label: "Est. Value", icon: "" },
-  { id:"new",label:"new", icon:""}
+  { id: "new", label: "new", icon: "" }
 ];
 export default columnConfig;
