@@ -91,14 +91,18 @@ const Table_Structure: React.FC<TableStructureProps> = ({
         header: () => (
           <div className={`flex items-center justify-between w-full`}>
             <div className="flex items-center">
-              {!["Priority", "Due Date", "Est. Value","new"].includes(col.label) && (
+              {!["Priority", "Due Date", "Est. Value", "new"].includes(
+                col.label
+              ) && (
                 <img
                   src={col.icon}
                   alt={`${col.label} icon`}
                   className="max-w-full h-auto mr-2"
                 />
               )}
-              <span className="text-sm text-gray-700">{col.label=="new"?"":col.label}</span>
+              <span className="text-sm text-gray-700">
+                {col.label == "new" ? "" : col.label}
+              </span>
             </div>
             <span id="clickable" className="cursor-pointer">
               <img
@@ -172,14 +176,14 @@ const Table_Structure: React.FC<TableStructureProps> = ({
               <div className="flex items-center bg-gray-200 px-3 py-1 rounded w-full">
                 {/* Left: Icon + Label */}
                 <div className="flex items-center space-x-2 bg-gray-100 p-1 rounded-md">
-                  <img src={linkIcon} alt="link" className="w-4 h-4" />
+                  <img src={linkIcon} alt="link" className="w-4 h-4" onClick={()=>console.log("linking ...")} />
                   <span className="text-sm font-medium text-gray-800">
                     Q3 Financial Overview
                   </span>
                 </div>
 
                 {/* Right: Reload Icon */}
-                <img src={reloadIcon} alt="reload" className="ml-3 w-3 h-3" />
+                <img src={reloadIcon} alt="reload" className="ml-3 w-3 h-3" onClick={()=>console.log("Reloading ...")} />
               </div>
             </th>
             <th></th>
@@ -188,7 +192,12 @@ const Table_Structure: React.FC<TableStructureProps> = ({
               <div className="flex items-center justify-center space-x-2 bg-[#d2e0d4] text-green-800 px-3 py-1 rounded w-full">
                 <img src={SplitIcon} alt="split" className="w-4 h-4" />
                 <span className="text-[#505450]">ABC</span>
-                <img src={more} alt="more" className="w-4 h-4" />
+                <img
+                  src={more}
+                  alt="more"
+                  className="w-4 h-4"
+                  onClick={() => console.log("See More")}
+                />
               </div>
             </th>
 
@@ -200,7 +209,12 @@ const Table_Structure: React.FC<TableStructureProps> = ({
               <div className="flex items-center justify-center space-x-2 bg-[#DCCFFC] text-purple-100 px-3 py-1 rounded w-full ">
                 <img src={split} alt="split" className="w-4 h-4" />
                 <span className="text-[#505450]">Answer a question</span>
-                <span className="text-[#505450]">⋯</span>
+                <img
+                  src={more}
+                  alt="more"
+                  className="w-4 h-4"
+                  onClick={() => console.log("See More")}
+                />
               </div>
             </th>
 
@@ -209,7 +223,12 @@ const Table_Structure: React.FC<TableStructureProps> = ({
               <div className="flex items-center space-x-2 bg-[#fac2af] text-orange-800 px-3 py-1 rounded w-full">
                 <img src={split} alt="split" className="w-4 h-4" />
                 <span>Extract</span>
-                <span className="text-gray-500">⋯</span>
+                <img
+                  src={more}
+                  alt="more"
+                  className="w-4 h-4"
+                  onClick={() => console.log("See More")}
+                />
               </div>
             </th>
 
