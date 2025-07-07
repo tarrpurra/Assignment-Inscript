@@ -16,6 +16,7 @@ import plusIcon from "../assets/Add.png";
 import SplitIcon from "../assets/Arrowsplitgreen.png";
 import split from "../assets/Arrowsplit.png";
 import more from "../assets/More.png";
+import Chevron from "../assets/chevron.png"
 
 type TableData = { [key: string]: string };
 type TableStyle = { [key: string]: string };
@@ -106,7 +107,7 @@ const Table_Structure: React.FC<TableStructureProps> = ({
             </div>
             <span id="clickable" className="cursor-pointer">
               <img
-                src="./src/assets/chevron.png"
+                src={Chevron}
                 alt="Sort or Edit"
                 className="w-3 h-3"
                 onClick={() => console.log("Chevron clicked")}
