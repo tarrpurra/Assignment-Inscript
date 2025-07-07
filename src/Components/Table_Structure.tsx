@@ -15,7 +15,7 @@ import reloadIcon from "../assets/Sync.png";
 import plusIcon from "../assets/Add.png";
 import SplitIcon from "../assets/Arrowsplitgreen.png";
 import split from "../assets/Arrowsplit.png";
-import more from "../assets/more.png";
+import more from "../assets/More.png";
 
 type TableData = { [key: string]: string };
 type TableStyle = { [key: string]: string };
